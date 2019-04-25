@@ -16,3 +16,9 @@ agent" workflow.
 Because this is running in Docker, you may need to take care with the
 Team Server URL.  For example, on Mac you may need to use the hostname
 `host.docker.internal` to access Team Server running on the host system.
+
+#Troubleshooting
+
+The `run` script maps the agent's `.contrast` directory to `./live-fs`.  If
+you are having trouble with the agent, that's where you will find the log files
+and such.
