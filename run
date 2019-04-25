@@ -1,0 +1,14 @@
+#!/bin/bash
+
+D="$(dirname "${BASH_SOURCE[0]}")"
+if [ "$D" = "." ]; then
+    D=`pwd`
+fi
+cd "$D"
+
+docker run --rm -it --name petclinic \
+	-v "$D/contrast.jar:/app/contrast.jar:ro" \
+	-v "$D/live-fs:/root/.contrast" \
+	-v "$D/contrast_security.yaml:/etc/contrast/java/contrast_security.yaml:ro" \
+	-p 8080:8080 \
+	 petclinic
