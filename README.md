@@ -19,15 +19,16 @@ Edit the `run` script to put it on a different port, if desired.
 
 ## Adding the Contrast Java agent to the PetClinic application
 
-The contrast.jar and contrast_security.yaml are downloaded from the
-Contrast dashboard.  Top right, select 'Add Agent', Java as agent type then
-select Download Agent.  Once agent is downloaded, select 'Skip', then 'Download Config File'.
+Download the contrast.jar and contrast_security.yaml from the Contrast dashboard.
+Top right, select 'Add Agent', Java as agent type then select Download Agent.  
+Once agent is downloaded, select 'Skip', then 'Download Config File'.
 
 ```
 	git clone https://github.com/spring-projects/spring-petclinic.git
 	cd spring-petclinic
 	./build
 	Download contrast.jar and contrast_security.yaml to the spring-petclinic directory
+	Copy all content from the contrast_security_sample.yaml to the bottom of your contrast_security.yaml
 	./run
 ```
 
