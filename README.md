@@ -36,10 +36,10 @@ In your browser, gotot http://localhost:8080 to make sure the container started 
 can access the application. Edit the `run`script to put it on a different port, if desired.
 
 In the Contrast UI, you should see the application show up:
-<img width="1042" alt="petclinic app in Contrast" src="https://drive.google.com/file/d/1wijNYvsJm36DrF9iDyhhZWU1jgck-_To/view?usp=sharing">
+<img width="1042" alt="petclinic app in Contrast" src="https://contrastsecurity.s3.us-east-2.amazonaws.com/PetClinic+app+in+Contrast.png">
 
 Along with the server:
-<img width="1042" alt="DockerServer listed in Contrast servers" src="https://drive.google.com/open?id=1CafXUw4qxDWqEIyYpfwwhWFIpEZ1-vr1">
+<img width="1042" alt="DockerServer listed in Contrast servers" src="https://contrastsecurity.s3.us-east-2.amazonaws.com/DockerServer+found+in+Contrast+servers.png">
 
 Because this is running in Docker, you may need to take care with the
 Team Server URL.  For example, on Mac you may need to use the hostname
