@@ -27,12 +27,12 @@ Once agent is downloaded, select 'Skip', then 'Download Config File'.
 	git clone https://github.com/spring-projects/spring-petclinic.git
 	cd spring-petclinic
 	./build
-	Download contrast.jar and contrast_security.yaml to the spring-petclinic directory
+	Copy the contrast.jar and contrast_security.yaml to the spring-petclinic directory
 	Copy all content from the contrast_security_sample.yaml to the bottom of your contrast_security.yaml
 	./run
 ```
 
-In your browser, gotot http://localhost:8080 to make sure the container started correctly and you
+In your browser, goto http://localhost:8080 to make sure the container started correctly and you
 can access the application. Edit the `run`script to put it on a different port, if desired.
 
 In the Contrast UI, you should see the application show up:
@@ -40,6 +40,9 @@ In the Contrast UI, you should see the application show up:
 
 Along with the server:
 <img width="1042" alt="DockerServer listed in Contrast servers" src="https://contrastsecurity.s3.us-east-2.amazonaws.com/DockerServer+found+in+Contrast+servers.png">
+
+Both the application name and server name come from the contrast_security_sample.yaml you copied to your 
+contrast_security.yaml. For more details on all Contrast Java agent configurations, please refer to our docs <a href="https://docs.contrastsecurity.com/installation-javaconfig.html">here</a>. 
 
 Because this is running in Docker, you may need to take care with the
 Team Server URL.  For example, on Mac you may need to use the hostname
