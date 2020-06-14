@@ -1,21 +1,21 @@
 # Contrast agent deployment in Docker - Java
 This repo is part the Contrast agent deployment in Docker - Java guide.
 <a href="https://drive.google.com/file/d/1dlQDUVe1hSZsU8y4A9I1xgQpCYtW79z7/view?usp=sharing">See the guide here</a>
-The Dockerfile contains commented out examples of how to download the Java automatically via a curl command and how to pass Contrast agent config info via command line. To customize your own curl command, please refer to our docs <a href="https://docs.contrastsecurity.com/tools-apiaccess.html">here</a>. For more details on all Contrast Java agent configurations, please refer to our docs <a href="https://docs.contrastsecurity.com/installation-javaconfig.html">here</a>. 
+The Dockerfile contains commented out examples of how to download the Contrast Java agent automatically via a curl command and how to pass Contrast agent config info via command line. To customize your own curl command, please refer to our docs <a href="https://docs.contrastsecurity.com/tools-apiaccess.html">here</a>. For more details on all Contrast Java agent configurations, please refer to our docs <a href="https://docs.contrastsecurity.com/installation-javaconfig.html">here</a>. 
 
+## Prerequisites
+The following items should be installed in your system:
 
-## Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=master)](https://travis-ci.org/spring-projects/spring-petclinic/)
+Maven 3 (http://www.sonatype.com/books/mvnref-book/reference/installation.html)
 
-## Running petclinic locally
+## Running petclinic locally without Contrast
 ```
 	git clone https://github.com/spring-projects/spring-petclinic.git
 	cd spring-petclinic
 	./mvnw spring-boot:run
 ```
-
 You can then access petclinic here: http://localhost:8080/
-
-<img width="1042" alt="petclinic-screenshot" src="https://cloud.githubusercontent.com/assets/838318/19727082/2aee6d6c-9b8e-11e6-81fe-e889a5ddfded.png">
+Edit the `run` script to put it on a different port, if desired.
 
 ## Adding the Contrast Java agent to the PetClinic application
 
@@ -31,8 +31,14 @@ select Download Agent.  Once agent is downloaded, select 'Skip', then 'Download 
 	./run
 ```
 
-PetClinic will be available on localhost:8080 by default.  Edit the `run`
-script to put it on a different port, if desired.
+In your browser, gotot http://localhost:8080 to make sure the container started correctly and you
+can access the application. Edit the `run`script to put it on a different port, if desired.
+
+In the Contrast UI, you should see the application show up:
+<img width="1042" alt="petclinic app in Contrast" src="https://drive.google.com/file/d/1wijNYvsJm36DrF9iDyhhZWU1jgck-_To/view?usp=sharing">
+
+Along with the server:
+<img width="1042" alt="DockerServer listed in Contrast servers" src="https://drive.google.com/open?id=1CafXUw4qxDWqEIyYpfwwhWFIpEZ1-vr1">
 
 Because this is running in Docker, you may need to take care with the
 Team Server URL.  For example, on Mac you may need to use the hostname
