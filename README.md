@@ -1,6 +1,6 @@
 # Contrast agent deployment in Docker - Java
 
-This repo is a companion to the [Contrast agent deployment in Docker - Java guide](https://drive.google.com/file/d/1dlQDUVe1hSZsU8y4A9I1xgQpCYtW79z7/view?usp=sharing).
+This repo is a companion to the [Contrast agent deployment in Docker - Java guide](https://docs.google.com/document/d/1R-61cvl1cJ5l0GKM9Cb55P3jjz1Qng8aMLu8TJeuwa4/edit?usp=sharing).
 
 ## Prerequisites
 
